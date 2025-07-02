@@ -1,6 +1,6 @@
 # Firebase sensitive files
 **/android/app/google-services.json
-**/lib/core/services/services.dart
+
 
 
 # Miscellaneous
