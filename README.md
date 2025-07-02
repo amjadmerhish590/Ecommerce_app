@@ -27,7 +27,24 @@
 
 - 🔍 **Search**
     - Smart search functionality to find products efficiently.
+---
 
+## 🛠️ Technologies Used
+
+- Flutter
+- Firebase
+- Google Maps API
+- GetX (for state management and dependency injection)
+
+---
+
+## 📦 Firebase Integration
+
+The app uses **Firebase** for:
+- 🔥 Cloud Messaging (Push Notifications)
+
+Firebase is initialized securely inside:
+lib/core/services/services.dart
 
 > ⚠️ **Note:**  
 - Sensitive Firebase configuration keys (`apiKey`, `appId`, `messagingSenderId`, `projectId`) are defined manually inside `lib/core/services/services.dart`.
@@ -43,6 +60,17 @@
 > ✅ This prevents the key from being exposed in public repositories.
 
 ---
+## 🛠️ API Configuration
+
+- `linkapi.dart`:  
+  This file contains all the API endpoints linking the app to the project's MySQL backend database.  
+  It manages the server address and various backend service access points.
+
+> **Note:**  
+> Update API URLs in this file whenever the server configuration or environment changes.
+
+---
+
 
 ## 📁 Project Structure
 
