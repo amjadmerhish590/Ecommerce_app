@@ -1,3 +1,10 @@
+# 🛍️ Client App – Flutter E-Commerce Application
+
+This is the Client App for a multi-module e-commerce system developed using Flutter.  
+It provides end-users with a seamless shopping experience, including authentication, product browsing, order management, and real-time notifications.
+
+---
+
 ## ✨ Features
 
 - 🔐 **User Authentication**
