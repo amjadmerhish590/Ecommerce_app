@@ -34,6 +34,17 @@ It provides end-users with a seamless shopping experience, including authenticat
 
 - 🔍 **Search**
     - Smart search functionality to find products efficiently.
+
+## 🧱 Architecture
+
+This project follows the **MVC (Model-View-Controller)** architectural pattern:
+
+- **Model** → Defined inside the `lib/data/` directory. Responsible for data handling and structures.
+- **View** → Built inside the `lib/view/` directory. Includes all UI screens and components.
+- **Controller** → Managed in the `lib/controller/` directory. Handles the business logic and app state using GetX.
+
+This clean separation of concerns makes the app more maintainable, scalable, and testable.
+
 ---
 
 ## 🛠️ Technologies Used
