@@ -1,7 +1,8 @@
 import 'package:ecommercecourse/controller/orders/pending_controller.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
-import 'package:flutter_ringtone_player/flutter_ringtone_player.dart';
+// import 'package:flutter_ringtone_player/flutter_ringtone_player.dart';
 import 'package:get/get.dart';
+import 'package:audioplayers/audioplayers.dart';
 
 requestPermissionNotification() async {
   NotificationSettings settings =
@@ -16,13 +17,20 @@ requestPermissionNotification() async {
   );
 }
 
+final player = AudioPlayer();
+
+Future<void> playNotification() async {
+  await player.play(AssetSource('sounds/notification.mp3'));
+}
+
 fcmConfig() {
   FirebaseMessaging.onMessage.listen((message) {
     print(
         "***************************** Notification ***************************");
     print(message.notification!.title);
     print(message.notification!.body);
-    FlutterRingtonePlayer().playNotification();
+    playNotification();
+    // FlutterRingtonePlayer().playNotification();
     Get.snackbar(message.notification!.title!, message.notification!.body!);
     refreshPageNotification(message.data);
   });

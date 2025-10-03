@@ -2,6 +2,9 @@
 **/android/app/google-services.json
 lib/test_view.dart
 lib/test.dart
+lib/core/constant/key.dart
+
+.env
 
 
 
