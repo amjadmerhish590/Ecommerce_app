@@ -5,7 +5,7 @@ lib/test.dart
 lib/core/constant/key.dart
 
 .env
-
+key.properties
 
 
 
